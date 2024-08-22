@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/80610f34af.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="eecefdsk.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p> Front End Developer</p><br>
+            <h3>Hi, I'm <span>Ahmed</span><br>From<br>Madanapalli</h3>
+        </div>
+    </div>
+</div>
+<!----------about---------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="user">
+                <img src="Ahmed.jpg">
+            </div>
+            <div class="user-1">
+                <h3 class="sub-title">About Me</h3>
+                <p>My name is Ahmed. I have completed my Bachelor's
+                    in Computer Science with<br>
+                    an aggregate of 81% from SV University in Tirupati. <br>
+                    I am currently developing a portfolio using HTML, CSS, and JavaScript. <br>
+                    My goal is to become a front-end web developer, <br>
+                    and I am passionate about creating visually appealing and user-friendly websites. <br>
+                    I enjoy learning new technologies and continuously improving my skills. In my free time, <br>
+                    I like to explore new design trends and work on personal projects to further hone my abilities.
+                </p> 
+                <div class="tab">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Front End</span><br>Designing Website</li>
+                        <li><span>Web Development</span><br>Web Development</li>
+                        <li><span>App Development</span><br>Andriod / IOS app</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>2024 - Present</span><br>Yocket finance</li>
+                        <li><span>2023-2024</span><br>Leap Advantage</li>
+                        <li><span>2022-2023</span><br>Leap Scholar</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2019-22</span><br>Bachelor from Kalikiri</li>
+                        <li><span>2017-19</span><br>Intermidate from Kalikiri</li>
+                        <li><span>2016-17</span><br>SSC from PapiReddiGariPalli</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---services-->
+<div id="services">
+    <div class="container">
+        <h3 class="sub-title">My SKILLS</h3>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Design</h3>
+                <p>Web design is the process of creating visually appealing and user-friendly websites by combining various elements such as layout,
+                    color schemes, typography, graphics, and content organization. It involves both the aesthetic aspects of a website,
+                    ensuring it is attractive and engaging, and the functional aspects, ensuring it is intuitive and easy to navigate.
+                    Modern web design also emphasizes responsiveness, ensuring that websites perform well across various devices and screen sizes.
+                    Effective web design blends creativity with technical skills, requiring knowledge of design principles, user experience (UX) best practices, 
+                    and coding languages like HTML, CSS, and JavaScript.
+                    The ultimate goal is to create websites that not only look good but also provide a seamless and enjoyable experience for users.
+                </p>
+                <a href="#"> Learn More</a>
+            </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h3>Web Development</h3>
+                    <p>Web development involves creating and maintaining websites,
+                         encompassing front-end development for user interfaces and back-end development for server-side operations. 
+                         It uses languages like HTML, CSS, JavaScript, and
+                          server-side languages such as Python and PHP. The goal is to build responsive, secure,
+                         and efficient websites that offer a seamless user experience. </p>              
+                    <a href="#"> Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h3>App Development</h3>
+                    <p>App development involves designing and building mobile or web applications to perform specific tasks or solve particular problems.
+                         It includes front-end design for user interfaces and back-end programming for functionality and data management. 
+                         Developers use languages like Java, Swift, Kotlin, and JavaScript, as well as frameworks like React Native and Flutter. 
+                         The objective is to create efficient, user-friendly, 
+                        and scalable apps that meet user needs and provide a smooth experience.</p>
+                        <a href="#"> Learn More</a>
+                </div>
+        </div>
+    </div>
+</div>
+<!------portfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h3 class="sub-title">My Work</h3>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.jpg">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The App connects you the talented people around the world.
+                    Download it from Play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+        </div>
+            <div class="work">
+                <img src="work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The App connects you the talented people around the world.
+                    Download it from Play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The App connects you the talented people around the world.
+                    Download it from Play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>shaikahamedt4n@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>7780302518</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/ahammad.shaik.923724/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/itsmeshaik4468"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/dont_convey_anyone/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/shaik-ahmed-7ab095261/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Ahmedshaik2"><i class="fab fa-github"></i></a>
+                    
+                </div>
+                <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <!---<input type="text"Ph.No="Ph.No" placeholder="Your Ph.No" required> -->
+                    <textarea name="Message" rows="6" placeholder="Your Message....."></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>     
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright ©Ahmed. Made with by using HTML,CSS and JavaScript</p>
+    </div>
+</div>
+<script>
+
+    
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname) {
+  for (tablink of tablinks) {
+    tablink.classList.remove("active-link");
+  }
+  for (tabcontent of tabcontents) {
+    tabcontent.classList.remove("active-tab");
+  }
+
+  event.currentTarget.classList.add("active-link");
+  document.getElementById(tabname).classList.add("active-tab")
+}
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxMYe5DuFxfXs1AKHV7eSI_1hNoCp5S6fgt5Pglqn4QLMY8sN8iUwBlg1_c13_Pl_JH/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML ="Submited Sucessfully"
+            setTimeout(function() {
+                msg.innerHTML = ""
+            },3000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
